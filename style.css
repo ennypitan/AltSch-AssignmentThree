@@ -344,7 +344,7 @@ input[type="submit"] {
   }
   .left-checkout-card,
   .right-checkout-card {
-    width: 95%;
+    width: 100%;
   }
   input {
     width: 100%;
