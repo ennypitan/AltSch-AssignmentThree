@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  /* font-style: bold; */
+  --CL-Blue: #1179bf;
+  --cl-green: #038e7d;
+  --Text-Color: #1d2c3c;
+  --Gray-BG: #edeff2;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #292019;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #292019;
+}
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: auto;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+nav {
+  width: 95%;
+  margin: auto;
+  padding: 0.6rem 0;
+  border-bottom: 2px solid #e0e6ea;
+  color: var(--Text-Color);
+  text-align: center;
+  font-size: 0.775rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.00063rem;
+}
+.logo img {
+  display: flex;
+  justify-content: start;
+  width: 20%;
+}
+.logo {
+  width: 50%;
+}
+ul li {
+  margin-right: 2rem;
+}
+.nav-btn {
+  border: 2px solid #646e7a;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+/* --------Left hand side of the checkout--------- */
+.checkout-box {
+  width: 60%;
+  margin: 3rem auto;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+  height: 100%;
+}
+.left-checkout-card {
+  width: 64%;
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  padding: 1rem 2rem;
+}
+.right-checkout-card {
+  width: 36%;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  background-color: var(--CL-Blue);
+  padding: 1rem 2rem;
+  color: white;
+}
+.chck-text {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.basic-info {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01rem;
+  align-items: center;
+  display: inline-flex;
+  margin-top: 1.5rem;
+}
+.box-num {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 2px solid var(--CL-Blue);
+  color: var(--CL-Blue);
+  position: relative;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+label {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.6rem;
+}
+.half-row fieldset {
+  width: 46%;
+}
+.half-row {
+  width: 100%;
+}
+
+input {
+  height: 2.2rem;
+  border-radius: 0.3125rem;
+  background: var(--Gray-BG);
+  border: 1px solid var(--Gray-BG);
+  padding: 0.3rem;
+  margin: 0.3rem 0;
+}
+input:focus {
+  border-width: 1.5px;
+  border-color: var(--cl-green);
+  outline: none;
+}
+input::placeholder {
+  color: #646e7a;
+  font-size: 0.775rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.one-quarter-row fieldset {
+  width: 75%;
+}
+.full-row {
+  width: 100%;
+}
+.credit-input {
+  width: 60%;
+}
+.card-date,
+.card-ccc {
+  width: 26%;
+}
+.combine-input {
+  display: flex;
+  & .card-date {
+    border-radius: 0;
+  }
+  & .card-ccc {
+    border-radius: 0 0.3125rem 0.3125rem 0;
+  }
+  & .credit-input {
+    border-radius: 0.3125rem 0 0 0.3125rem;
+  }
+}
+input[type="submit"] {
+  width: 100%;
+  color: white;
+  background-color: var(--cl-green);
+  border: none;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+.under-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.under-form-text {
+  margin-left: 1rem;
+}
+.stripe-logo {
+  text-align: center;
+}
+/* --------Right hand side of the checkout--------- */
+.first-line {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.00063rem;
+}
+.first-section .flex-row {
+  justify-content: flex-start;
+  align-items: start;
+}
+.sl-2 {
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  /* letter-spacing: -0.00094rem; */
+}
+.sl-1 {
+  padding-top: 0.3rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+}
+.sl-3 {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+}
+.sl-sl,
+.second-line {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: start; */
+  & .sl-3 {
+    align-self: self-end;
+  }
+}
+.third-line {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1rem;
+  /* padding-right: 1.5rem; */
+}
+.second-section {
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1rem;
+  & .flex-row {
+    justify-content: flex-start;
+  }
+  & .ss-row {
+    padding-bottom: 0.5rem;
+  }
+}
+.second-section .box-num {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid white;
+  color: white;
+  & i {
+    font-size: 0.7rem;
+  }
+}
+.client-text {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-style: regular;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: -0.0005rem;
+}
+.line {
+  width: 100%;
+  height: 0.0125rem;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+.FTP-text {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.FTP-img-holder .box-num {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  color: white;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.client-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+/* ----------Media query------------ */
+/* Screen sizes between 320px to 480px width */
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  header {
+    display: none;
+  }
+  .checkout-box {
+    width: 100%;
+  }
+  .checkout .flex-container {
+    flex-direction: column;
+  }
+  .left-checkout-card,
+  .right-checkout-card {
+    width: 95%;
+  }
+  input {
+    width: 100%;
+  }
+}
+
+/* Screen sizes between 481px to 768px width */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  header {
+    display: none;
+  }
+  .checkout-box {
+    width: 100%;
+  }
+  .checkout .flex-container {
+    flex-direction: column;
+  }
+  .left-checkout-card,
+  .right-checkout-card {
+    width: 95%;
+  }
+}
